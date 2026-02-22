@@ -28,6 +28,10 @@ public class CharData {
 		return this.chr == chr;
 	}
 	
+	public char getChar() {
+		return this.chr;
+	}
+
 	/** Returns a textual representation of this CharData object. */
 	public String toString() {
 		return "(" + chr + " " + count + " " + p + " " + cp + ")";
