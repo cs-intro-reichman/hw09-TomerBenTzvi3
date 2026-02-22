@@ -38,13 +38,16 @@ public class List {
     
     /** GIVE Textual representation of this list. */
     public String toString() {
-        StringBuilder output = new StringBuilder();
+        StringBuilder output = new StringBuilder("(");
         Node current = first;
         while (current != null) { 
             output.append(current.cp.toString());
-            output.append("");
             current = current.next;
+            if (current != null) {
+                output.append(" ");
+            }
         }
+        output.append(")");
         return output.toString();
     }
 
